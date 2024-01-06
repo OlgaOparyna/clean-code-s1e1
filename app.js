@@ -12,14 +12,16 @@ const createNewTaskElement = function(taskString){
   const deleteButton = document.createElement("button");
   const deleteButtonImg = document.createElement("img");
 
+  listItem.className = "tasks__item";
   label.innerText = taskString;
   label.className = "label";
   checkBox.type = "checkbox";
+  checkBox.className = "checkbox";
   editInput.type = "text";
   editInput.className = "input";
   editButton.innerText = "Edit";
-  editButton.className = "button-edit";
-  deleteButton.className = "button-delete";
+  editButton.className = "button button-edit";
+  deleteButton.className = "button button-delete";
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
   listItem.appendChild(checkBox);
